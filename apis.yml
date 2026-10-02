@@ -1,23 +1,126 @@
 aid: bluetriangletechnologies
+
 name: Bluetriangletechnologies
-description: 'Bluetriangletechnologies is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: Blue Triangle Technologies provides a Revenue Assurance Platform that quantifies website friction in monetary terms, enabling digital
+  teams to prioritize fixes that impact revenue. The platform continuously measures visitor interactions, identifies costly friction points, and
+  validates ROI of improvements, integrating with tools like Jira. It serves enterprises across eCommerce, financial services, travel, and healthcare,
+  offering analytics, remediation plans, and AI‑assisted insights.
+
 url: https://raw.githubusercontent.com/api-evangelist/bluetriangletechnologies/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-29 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-29'
+
 modified: '2026-09-29'
+
 tags:
 - Company
-apis: []
+- Analytics
+- Revenue Assurance
+- Digital Experience
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/bluetriangletechnologies-rules.yml
+- type: JSONLD
+  url: json-ld/bluetriangletechnologies-context.jsonld
+- type: Vocabulary
+  url: vocabulary/bluetriangletechnologies-vocabulary.yml
+- type: DataModel
+  url: data-model/bluetriangletechnologies-data-model.yml
+- type: ChangeLog
+  url: changelog/bluetriangletechnologies-changelog.yml
+- type: Authentication
+  url: authentication/bluetriangletechnologies-authentication.yml
+- type: Conformance
+  url: conformance/bluetriangletechnologies-conformance.yml
+- type: LLMsTxt
+  url: llms/bluetriangletechnologies-llms.txt
+- type: SecurityTxt
+  url: well-known/bluetriangletechnologies-status-security.txt
+- type: WellKnown
+  url: well-known/bluetriangletechnologies-well-known.yml
+- type: Hosts
+  url: hosts/bluetriangletechnologies-hosts.yml
+- type: Vendors
+  url: vendors/bluetriangletechnologies-vendors.yml
+- type: StatusPage
+  url: https://status.bluetriangle.com/
+- type: Leadership
+  url: https://bluetriangle.com/team
+- type: DomainSecurity
+  url: security/bluetriangletechnologies-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bluetriangletechnologies
+  url: https://bluetriangle.com
+- type: DeveloperPortal
+  url: https://portal.bluetriangle.com/
+- type: GettingStarted
+  url: https://bluetriangle.com/quick-tour-video-page
+- type: Support
+  url: https://help.bluetriangle.com/
+- type: Blog
+  url: https://bluetriangle.com/blog
+- type: GitHubOrganization
+  url: https://github.com/blue-triangle-tech
+- type: SignUp
+  url: https://bluetriangle.com/schedule-demo
+- type: TermsOfService
+  url: https://bluetriangle.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://bluetriangle.com/privacy-policy
+
+apis:
+- name: Blue Triangle API
+  description: Revenue Assurance API providing friction metrics and analytics.
+  humanURL: https://portal.bluetriangle.com/
+  aid: bluetriangletechnologies:blue-triangle-api
+- aid: bluetriangletechnologies:bluetriangletechnologies-api
+  name: Bluetriangletechnologies API
+  description: 'Bluetriangletechnologies API as documented publicly: 6 operations. Contract generated from the documentation by API Evangelist
+
+    (2026-09-29); not the provider''s own document.'
+  humanURL: https://help.bluetriangle.com/help-center/resource-endpoint.md
+  baseURL: https://api.bluetriangletech.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/bluetriangletechnologies-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-get-content-security-policies-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal at https://portal.bluetriangle.com/ loads content via JavaScript, preventing machine-readable spec discovery.
+  evidence:
+  - url: https://portal.bluetriangle.com/
+    status: 200
+  checked: '2026-09-29'
+x-enrichment:
+  date: '2026-09-29'
+  status: enriched
+  artifacts_added: 22
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

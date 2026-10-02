@@ -1,0 +1,144 @@
+generated: '2026-10-02'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 8
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - community
+  - marketing
+  - portal
+  - source
+  - status
+  - support
+  - website
+hosts:
+- host: api.bluetriangle.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: bluetriangle.com
+  role: api
+  relation: own
+- host: api.bluetriangletech.com
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: bluetriangletech.com
+  role: api
+  relation: other-domain
+- host: blog.bluetriangle.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bluetriangle.com
+  role: marketing
+  relation: own
+- host: bluetriangle.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Leadership
+  - Website
+  - GettingStarted
+  - Blog
+  - SignUp
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: bluetriangle.com
+  role: website
+  relation: own
+- host: community.bluetriangle.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bluetriangle.com
+  role: community
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: help.bluetriangle.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves:
+  - docs
+  registrable_domain: bluetriangle.com
+  role: support
+  relation: own
+- host: portal.bluetriangle.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: bluetriangle.com
+  role: portal
+  relation: own
+- host: status.bluetriangle.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: bluetriangle.com
+  role: status
+  relation: own
+- host: support.bluetriangle.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bluetriangle.com
+  role: support
+  relation: own

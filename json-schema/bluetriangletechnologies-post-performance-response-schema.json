@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/bluetriangletechnologies/main/json-schema/bluetriangletechnologies-post-performance-response-schema.json",
+  "title": "PostPerformanceResponse",
+  "x-generated": "2026-09-29",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/bluetriangletechnologies-openapi-generated.yml#/components/schemas/PostPerformanceResponse",
+  "type": "object",
+  "properties": {
+    "site": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "totalItems": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string"
+          },
+          "onload": {
+            "type": "string"
+          },
+          "dns": {
+            "type": "string"
+          },
+          "tcp": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

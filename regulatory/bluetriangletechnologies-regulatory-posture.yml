@@ -1,0 +1,28 @@
+generated: '2026-09-29'
+method: probed
+source: https://bluetriangle.com/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: privacy-policy
+        url: https://bluetriangle.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "California residents may make a request for access to certain personal information subject to the CCPA, not otherwise exempted as nonpublic personal information collected by financial institutions, by sending an email to at sales@bluetriangletech.com ."
+        note: Provides a mechanism for data subject access requests under CCPA.
+  age_assurance:
+    evidence:
+      - source: privacy-policy
+        url: https://bluetriangle.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "We do not knowingly collect or maintain personally identifiable information from persons under 13 years of age, and no part of our site is directed to persons under 13."
+        note: States policy on children’s privacy, indicating age assurance.
+  data_residency:
+    evidence:
+      - source: privacy-policy
+        url: https://bluetriangle.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Our site is hosted in the United States. If you are accessing the site from a jurisdiction with privacy laws or regulations that differ from United States laws, please be advised that through your continued use of our site, you are transferring your personal information to the United States and you are consenting to that transfer."
+        note: Discloses cross‑border data transfer to the US.

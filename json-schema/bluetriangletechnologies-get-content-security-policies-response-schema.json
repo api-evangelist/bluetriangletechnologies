@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/bluetriangletechnologies/main/json-schema/bluetriangletechnologies-get-content-security-policies-response-schema.json",
+  "title": "GetContentSecurityPoliciesResponse",
+  "x-generated": "2026-09-29",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/bluetriangletechnologies-openapi-generated.yml#/components/schemas/GetContentSecurityPoliciesResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "metaTag": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "responseHeader": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

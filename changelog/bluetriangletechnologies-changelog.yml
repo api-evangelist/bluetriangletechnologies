@@ -1,0 +1,46 @@
+generated: '2026-09-29'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://help.bluetriangle.com/help-center/portal-release-notes-june-29-2023-v7-5-2.md
+sources:
+- https://help.bluetriangle.com/help-center/portal-release-notes-june-29-2023-v7-5-2.md
+- https://help.bluetriangle.com/help-center/portal-release-notes-may-17-2023-v7-4-1.md
+- https://help.bluetriangle.com/help-center/portal-release-notes-may-2-2024-v8-4.md
+- https://help.bluetriangle.com/help-center/portal-v5-release-notes-november-11-2020.md
+entries:
+- breaking: false
+  highlights:
+  - CPU and Memory Usage metrics added to the Native App Performance Details Page
+  - Default view of the page will now include these metrics
+  - Additional Native App information added to the Performance Measurement Details table on the Native App Performance Details page
+  - Issue fixed on the Data Science where Page Views/Session wasn't working on the histogram
+  version: v8.4
+  date: '2024-05-02'
+- breaking: false
+  highlights:
+  - Moving all the Native App links out into their own menu on the navigation bar instead of hidden underneath RUM
+  - Renaming the Object Level Detail waterfalls to Network Request Details
+  - Adding HTTP Status to the Network Request Details waterfall graph
+  - You can now schedule maintenance windows to stop running at a certain calendar date by unchecking the "indefinite" option and then selecting
+    the end date
+  version: v7.5.2
+  date: '2023-06-29'
+- breaking: false
+  highlights:
+  - Fixed an issue where First Paint would not show up on the Performance Budgets page
+  - Fixed an issue on the Performance Budgets page where the filters for the loaded budget wouldn't load correctly when you first hit the page
+  - Fixed an issue on the Performance Budgets page where percentile wasn't working
+  - Changed the text of the Aggregate Waterfall page to show First Input Delay Start to avoid confusion
+  version: v7.4.1
+  date: '2023-05-17'
+- breaking: false
+  highlights:
+  - On the RUM Performance Details / Session Lookup pages, the metric selector for the scatterplot will now include all custom numbers
+  - Important change to the way we are displaying scatterplot points
+  - Added sharable pages for RUM Perf Details, RUM Performance Comparison, and RUM Object Level Detail
+  - Added Custom Number 11 -- 20 to the Performance Measurement Details table
+  version: v5
+  date: '2020-11-11'
+current_version: v8.4
+note: Versioning scheme follows major.minor[.patch] format.
+docs: https://help.bluetriangle.com/help-center/portal-release-notes-june-29-2023-v7-5-2.md

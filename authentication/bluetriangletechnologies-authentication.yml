@@ -1,0 +1,24 @@
+generated: '2026-09-29'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://help.bluetriangle.com/help-center/why-is-the-api-responding-with-403-incorrect-email-or-api-key-provided-how-do-i-find-my-api-key-email.md
+sources:
+- https://help.bluetriangle.com/help-center/why-is-the-api-responding-with-403-incorrect-email-or-api-key-provided-how-do-i-find-my-api-key-email.md
+- https://help.bluetriangle.com/help-center/getting-started.md
+- https://help.bluetriangle.com/help-center/getting-started-with-the-bt-portal.md
+- https://help.bluetriangle.com/help-center/quick-start-guide-for-instrumenting-android-mobile-applications.md
+description: Authentication for Blue Triangle API
+schemes:
+- type: apiKey
+  name: X-API-Email
+  evidence: 'The Blue Triangle API requires each request be sent with two headers:'
+  location: header
+  header: X-API-Email
+  how_to_obtain: Log into the Blue Triangle Portal, click your Profile, and view Profile to find your email address.
+- type: apiKey
+  name: X-API-Key
+  evidence: 'The Blue Triangle API requires each request be sent with two headers:'
+  location: header
+  header: X-API-Key
+  how_to_obtain: Log into the Blue Triangle Portal, click your Profile, and view Profile to find your API key.
+docs: https://help.bluetriangle.com/help-center/why-is-the-api-responding-with-403-incorrect-email-or-api-key-provided-how-do-i-find-my-api-key-email.md

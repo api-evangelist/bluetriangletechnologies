@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "@vocab": "https://bluetriangle.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "bluetriangletechnologies": "https://bluetriangle.com/schema#",
+    "GetContentSecurityPoliciesResponse": "bluetriangletechnologies:GetContentSecurityPoliciesResponse",
+    "id": {
+      "@id": "bluetriangletechnologies:id",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "bluetriangletechnologies:name",
+      "@type": "xsd:string"
+    },
+    "version": {
+      "@id": "bluetriangletechnologies:version",
+      "@type": "xsd:string"
+    },
+    "metaTag": {
+      "@id": "bluetriangletechnologies:metaTag",
+      "@type": "xsd:string"
+    },
+    "responseHeader": {
+      "@id": "bluetriangletechnologies:responseHeader",
+      "@type": "xsd:string"
+    },
+    "PostPerformanceRequest": "bluetriangletechnologies:PostPerformanceRequest",
+    "site": {
+      "@id": "bluetriangletechnologies:site",
+      "@type": "xsd:string"
+    },
+    "start": {
+      "@id": "bluetriangletechnologies:start",
+      "@type": "xsd:string"
+    },
+    "end": {
+      "@id": "bluetriangletechnologies:end",
+      "@type": "xsd:string"
+    },
+    "limit": {
+      "@id": "bluetriangletechnologies:limit",
+      "@type": "xsd:integer"
+    },
+    "page": {
+      "@id": "bluetriangletechnologies:page",
+      "@type": "xsd:integer"
+    },
+    "dataColumns": {
+      "@id": "bluetriangletechnologies:dataColumns",
+      "@container": "@list"
+    },
+    "group": {
+      "@id": "bluetriangletechnologies:group",
+      "@container": "@list"
+    },
+    "PostPerformanceResponse": "bluetriangletechnologies:PostPerformanceResponse",
+    "status": {
+      "@id": "bluetriangletechnologies:status",
+      "@type": "xsd:integer"
+    },
+    "totalItems": {
+      "@id": "bluetriangletechnologies:totalItems",
+      "@type": "xsd:integer"
+    },
+    "data": {
+      "@id": "bluetriangletechnologies:data",
+      "@container": "@list"
+    },
+    "PostResourceRequest": "bluetriangletechnologies:PostResourceRequest"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Bluetriangletechnologies API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Bluetriangletechnologies's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-29) from openapi/_ae-authored/bluetriangletechnologies-openapi-generated.yml.",
+  "dcterms:created": "2026-09-29",
+  "dcterms:source": [
+    "openapi/_ae-authored/bluetriangletechnologies-openapi-generated.yml"
+  ]
+}
