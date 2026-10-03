@@ -1,0 +1,106 @@
+openapi: 3.2.0
+info:
+  title: Bluetriangletechnologies Performance API
+  version: '2026-09-29'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-29: 6 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Bluetriangletechnologies has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 6
+    documentation: 0
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-29'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://help.bluetriangle.com/help-center/resource-endpoint.md
+  - https://help.bluetriangle.com/help-center/performance-endpoint.md
+  - https://help.bluetriangle.com/help-center/event-markers-endpoint.md
+  - https://help.bluetriangle.com/help-center/content-security-policy-csp-endpoint.md
+  - https://help.bluetriangle.com/help-center/api.md
+  - https://help.bluetriangle.com/help-center/the-blue-triangle-api-overview.md
+  - https://help.bluetriangle.com/help-center/why-does-the-api-respond-with-400-method-not-allowed.md
+  - https://help.bluetriangle.com/help-center/why-is-my-curl-request-to-the-api-not-working-on-windows.md
+servers:
+- url: https://api.bluetriangletech.com
+security:
+- apiKey: []
+tags:
+- name: Performance
+paths:
+  /performance:
+    post:
+      operationId: post_performance
+      tags:
+      - Performance
+      summary: POST /performance
+      x-source: https://help.bluetriangle.com/help-center/performance-endpoint.md
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostPerformanceRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostPerformanceResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -X POST \"https://api.bluetriangletech.com/performance\"  -H \"X-API-Email: email@company.com\"  -H \"X-API-Key: 2831ac6dffec75a48fe712345e000481\"  -H \"Content-Type: application/json\"  --data '{\"site\":\"demo\",\"start\":\"1477972800\",\"end\":\"1479877200\",\"limit\":100,\"page\":1,\n     \"dataColumns\":[\"onload\",\"dns\",\"tcp\"],\"group\":[\"time\"]}'"
+components:
+  schemas:
+    PostPerformanceRequest:
+      type: object
+      properties:
+        site:
+          type: string
+        start:
+          type: string
+        end:
+          type: string
+        limit:
+          type: integer
+        page:
+          type: integer
+        dataColumns:
+          type: array
+          items:
+            type: string
+        group:
+          type: array
+          items:
+            type: string
+    PostPerformanceResponse:
+      type: object
+      properties:
+        site:
+          type: string
+        status:
+          type: integer
+        totalItems:
+          type: integer
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              time:
+                type: string
+              onload:
+                type: string
+              dns:
+                type: string
+              tcp:
+                type: string
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key

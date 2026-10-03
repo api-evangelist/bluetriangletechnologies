@@ -90,17 +90,18 @@ apis:
   description: Revenue Assurance API providing friction metrics and analytics.
   humanURL: https://portal.bluetriangle.com/
   aid: bluetriangletechnologies:blue-triangle-api
-- aid: bluetriangletechnologies:bluetriangletechnologies-api
-  name: Bluetriangletechnologies API
-  description: 'Bluetriangletechnologies API as documented publicly: 6 operations. Contract generated from the documentation by API Evangelist
-
-    (2026-09-29); not the provider''s own document.'
-  humanURL: https://help.bluetriangle.com/help-center/resource-endpoint.md
+- aid: bluetriangletechnologies:bluetriangletechnologies-content-security-policies-api
+  name: Bluetriangletechnologies Content Security Policies API
+  description: >-
+    The Content Security Policies API from Bluetriangletechnologies — 1 operation(s) for content security
+    policies.
+  humanURL: https://portal.bluetriangle.com/
   baseURL: https://api.bluetriangletech.com
+  tags:
+  - Content Security Policies
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/bluetriangletechnologies-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/bluetriangletechnologies-content-security-policies-api-openapi.yml
   - type: JSONSchema
     url: json-schema/bluetriangletechnologies-post-performance-response-schema.json
   - type: JSONSchema
@@ -109,7 +110,60 @@ apis:
     url: json-schema/bluetriangletechnologies-post-resource-request-schema.json
   - type: JSONSchema
     url: json-schema/bluetriangletechnologies-get-content-security-policies-response-schema.json
-
+- aid: bluetriangletechnologies:bluetriangletechnologies-event-markers-api
+  name: Bluetriangletechnologies Event Markers API
+  description: The Event Markers API from Bluetriangletechnologies — 1 operation(s) for event markers.
+  humanURL: https://portal.bluetriangle.com/
+  baseURL: https://api.bluetriangletech.com
+  tags:
+  - Event Markers
+  properties:
+  - type: OpenAPI
+    url: openapi/bluetriangletechnologies-event-markers-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-get-content-security-policies-response-schema.json
+- aid: bluetriangletechnologies:bluetriangletechnologies-performance-api
+  name: Bluetriangletechnologies Performance API
+  description: The Performance API from Bluetriangletechnologies — 1 operation(s) for performance.
+  humanURL: https://portal.bluetriangle.com/
+  baseURL: https://api.bluetriangletech.com
+  tags:
+  - Performance
+  properties:
+  - type: OpenAPI
+    url: openapi/bluetriangletechnologies-performance-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-get-content-security-policies-response-schema.json
+- aid: bluetriangletechnologies:bluetriangletechnologies-resource-api
+  name: Bluetriangletechnologies Resource API
+  description: The Resource API from Bluetriangletechnologies — 1 operation(s) for resource.
+  humanURL: https://portal.bluetriangle.com/
+  baseURL: https://api.bluetriangletech.com
+  tags:
+  - Resource
+  properties:
+  - type: OpenAPI
+    url: openapi/bluetriangletechnologies-resource-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-performance-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-post-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bluetriangletechnologies-get-content-security-policies-response-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
