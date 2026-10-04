@@ -56,27 +56,6 @@ paths:
         snippet: "curl -X POST \"https://api.bluetriangletech.com/performance\"  -H \"X-API-Email: email@company.com\"  -H \"X-API-Key: 2831ac6dffec75a48fe712345e000481\"  -H \"Content-Type: application/json\"  --data '{\"site\":\"demo\",\"start\":\"1477972800\",\"end\":\"1479877200\",\"limit\":100,\"page\":1,\n     \"dataColumns\":[\"onload\",\"dns\",\"tcp\"],\"group\":[\"time\"]}'"
 components:
   schemas:
-    PostPerformanceRequest:
-      type: object
-      properties:
-        site:
-          type: string
-        start:
-          type: string
-        end:
-          type: string
-        limit:
-          type: integer
-        page:
-          type: integer
-        dataColumns:
-          type: array
-          items:
-            type: string
-        group:
-          type: array
-          items:
-            type: string
     PostPerformanceResponse:
       type: object
       properties:
@@ -99,6 +78,27 @@ components:
                 type: string
               tcp:
                 type: string
+    PostPerformanceRequest:
+      type: object
+      properties:
+        site:
+          type: string
+        start:
+          type: string
+        end:
+          type: string
+        limit:
+          type: integer
+        page:
+          type: integer
+        dataColumns:
+          type: array
+          items:
+            type: string
+        group:
+          type: array
+          items:
+            type: string
   securitySchemes:
     apiKey:
       type: apiKey
