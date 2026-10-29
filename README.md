@@ -64,5 +64,117 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bluetriangletechnologies is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/bluetriangletechnologies
+Blue Triangle Technologies provides a Revenue Assurance Platform that quantifies website friction in monetary terms, enabling digital teams to prioritize fixes that impact revenue. The platform continuously measures visitor interactions, identifies costly friction points, and validates ROI of improvements, integrating with tools like Jira. It serves enterprises across eCommerce, financial services, travel, and healthcare, offering analytics, remediation plans, and AI‑assisted insights.
+
+**Areas:** Company · Analytics · Revenue Assurance · Digital Experience · Artificial Intelligence
+
+## Bluetriangletechnologies on APIs.io
+
+Everything profiled for Bluetriangletechnologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bluetriangletechnologies/](https://apis.io/providers/bluetriangletechnologies/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Blue Triangle API](https://apis.io/apis/bluetriangletechnologies/blue-triangle-api/) — Revenue Assurance API providing friction metrics and analytics.
+- [Bluetriangletechnologies Content Security Policies API](https://apis.io/apis/bluetriangletechnologies/bluetriangletechnologies-content-security-policies-api/) — The Content Security Policies API from Bluetriangletechnologies — 1 operation(s) for content security policies.
+- [Bluetriangletechnologies Event Markers API](https://apis.io/apis/bluetriangletechnologies/bluetriangletechnologies-event-markers-api/) — The Event Markers API from Bluetriangletechnologies — 1 operation(s) for event markers.
+- [Bluetriangletechnologies Performance API](https://apis.io/apis/bluetriangletechnologies/bluetriangletechnologies-performance-api/) — The Performance API from Bluetriangletechnologies — 1 operation(s) for performance.
+- [Bluetriangletechnologies Resource API](https://apis.io/apis/bluetriangletechnologies/bluetriangletechnologies-resource-api/) — The Resource API from Bluetriangletechnologies — 1 operation(s) for resource.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (4)
+
+The data models the API reads and writes.
+
+- [GetContentSecurityPoliciesResponse](https://apis.io/schemas/bluetriangletechnologies/bluetriangletechnologies-get-content-security-policies-response/)
+- [PostPerformanceRequest](https://apis.io/schemas/bluetriangletechnologies/bluetriangletechnologies-post-performance-request/)
+- [PostPerformanceResponse](https://apis.io/schemas/bluetriangletechnologies/bluetriangletechnologies-post-performance-response/)
+- [PostResourceRequest](https://apis.io/schemas/bluetriangletechnologies/bluetriangletechnologies-post-resource-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Bluetriangletechnologies Context](https://apis.io/jsonld/bluetriangletechnologies/bluetriangletechnologies-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Bluetriangletechnologies API Rules](https://apis.io/rules/bluetriangletechnologies/bluetriangletechnologies-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bluetriangletechnologies Authentication](https://apis.io/security/bluetriangletechnologies/bluetriangletechnologies-authentication/)
+- [Bluetriangletechnologies Domain Security](https://apis.io/security/bluetriangletechnologies/bluetriangletechnologies-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bluetriangle.com)
+- [Getting started](https://bluetriangle.com/quick-tour-video-page)
+- [Sign up](https://bluetriangle.com/schedule-demo)
+- [Support](https://help.bluetriangle.com/)
+- [Blog](https://bluetriangle.com/blog)
+- [Terms of service](https://bluetriangle.com/terms-of-use)
+- [Privacy policy](https://bluetriangle.com/privacy-policy)
+- [GitHub](https://github.com/blue-triangle-tech)
+- [Status](https://status.bluetriangle.com/)
+
+## API Evangelist rating
+
+**Kin Score 35.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.9 |
+| Contract quality | 23.7 |
+| Contract governance | 22.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 34.2 |
+
+**Agent readiness 30.6** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bluetriangletechnologies/](https://apis.io/providers/bluetriangletechnologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bluetriangletechnologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bluetriangletechnologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
